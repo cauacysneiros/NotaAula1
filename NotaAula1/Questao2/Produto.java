@@ -9,7 +9,6 @@ public class Produto {
         double valor;
         int quantidadeEstoque;
 
-        // Construtor
         public Produto(String codigo, String nome, String tamanhoPeso, String cor, double valor, int quantidadeEstoque) {
             this.codigo = codigo;
             this.nome = nome;
@@ -19,7 +18,6 @@ public class Produto {
             this.quantidadeEstoque = quantidadeEstoque;
         }
 
-        // Métodos getter
         public String getCodigo() {
             return codigo;
         }
@@ -36,7 +34,6 @@ public class Produto {
             return quantidadeEstoque;
         }
 
-        // Método para reduzir a quantidade em estoque
         public void reduzirEstoque(int quantidade) {
             this.quantidadeEstoque -= quantidade;
         }
