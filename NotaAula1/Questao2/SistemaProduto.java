@@ -25,7 +25,7 @@ public class SistemaProduto {
         double valor = scanner.nextDouble();
         System.out.print("Digite a quantidade no estoque: ");
         int quantidadeEstoque = scanner.nextInt();
-        scanner.nextLine(); // Limpar o buffer
+        scanner.nextLine(); 
 
         produto = new Produto(codigo, nome, tamanhoPeso, cor, valor, quantidadeEstoque);
         System.out.println("Produto cadastrado com sucesso!");
@@ -60,13 +60,13 @@ public class SistemaProduto {
         int opcaoPagamento = scanner.nextInt();
 
         switch (opcaoPagamento) {
-            case 1: // Pix
-            case 3: // Transferência
-            case 4: // Débito
-                valorTotal *= 0.95; // Aplica 5% de desconto
+            case 1: 
+            case 3: 
+            case 4: 
+                valorTotal *= 0.95; 
                 System.out.printf("Valor com desconto: R$ %.2f\n", valorTotal);
                 break;
-            case 2: // Espécie
+            case 2: 
                 System.out.print("Digite o valor pago: R$ ");
                 double valorPago = scanner.nextDouble();
                 if (valorPago >= valorTotal) {
@@ -75,8 +75,8 @@ public class SistemaProduto {
                 } else {
                     System.out.println("Valor pago insuficiente!");
                 }
-                return; // Finaliza a venda aqui
-            case 5: // Crédito
+                return; 
+            case 5: 
                 System.out.printf("Valor a ser pago em 3x: R$ %.2f\n", valorTotal / 3);
                 break;
             default:
