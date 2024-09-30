@@ -6,7 +6,6 @@ public class SituacaoAcademica {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Solicita o nome do aluno
         System.out.print("Digite o nome do aluno: ");
         String nome = scanner.nextLine();
 
